@@ -1,0 +1,30 @@
+{
+  "name": "aweseome-ui-kits-reference",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "watch:css": "nodemon -w src --ext 'js' --exec 'npm run update:css'",
+    "update:css": "atomizer -c atomic.js -o src/App.css  -R src/*.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "atomizer": "^3.4.8",
+    "nodemon": "^1.18.4"
+  }
+}
